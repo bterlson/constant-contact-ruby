@@ -1,0 +1,7 @@
+= constant-contact-ruby
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 Brian Terlson. See LICENSE for details.
