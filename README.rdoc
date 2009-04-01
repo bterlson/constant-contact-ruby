@@ -1,6 +1,34 @@
 = constant-contact-ruby
 
-Description goes here.
+Constant-contact-ruby is an interface to the Constant Contact API. The API allows you modify contacts, contact lists,
+campaigns, and activities involving those things in a restful nature. This gem authenticates with OAuth and uses
+Nokogiri to parse the ATOM feeds, so those two gems must be installed.
+
+Currently this API is not fleshed out in any way. It's not even close to useable. I plan to work on it when I have time
+as I could definitely use it at work. If you want to help out, by all means, see what you can do! Maybe it'd be best to
+co-ordinate our efforts, so drop me a line.
+
+== Requirements ==
+* oauth
+* nokogiri
+
+== Blah blah, show me an example ==
+
+As of now it's just a proof of concept that I plan to work on further when I get more time, but, since you asked, here's
+the only useful thing you can do at the moment:
+
+  cc = ConstantContact::Session.new('username', 'api_key', 'secret')
+  request_token = cc.get_request_token
+  puts "Authorize this app at #{request_token.authorize_url}"
+  gets
+
+  access_token = cc.get_access_token
+  # You'll probably want to save this access token someplace so you don't need to keep reauthorizing.
+
+  # Now, for something useful:
+  cc.contact(1).full_name
+  => "Joe Schmoe"
+
 
 == Copyright
 
