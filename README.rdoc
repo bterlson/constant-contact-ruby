@@ -8,11 +8,11 @@ Currently this API is not fleshed out in any way. It's not even close to useable
 as I could definitely use it at work. If you want to help out, by all means, see what you can do! Maybe it'd be best to
 co-ordinate our efforts, so drop me a line.
 
-== Requirements ==
+== Requirements
 * oauth
 * nokogiri
 
-== Blah blah, show me an example ==
+== Blah blah, show me an example
 
 As of now it's just a proof of concept that I plan to work on further when I get more time, but, since you asked, here's
 the only useful thing you can do at the moment:
